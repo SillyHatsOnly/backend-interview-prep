@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.tools-venv/
+
+# MkDocs
+site/
+
+# IDE / OS
+.idea/
+.vscode/
+*.swp
+.DS_Store
+.cursor/
+
+# Secrets / local
+.env
+.env.*
+*.pem
+
+# Books / large binaries (keep local paths in docs only)
+*.pdf
+*.djvu
+*.epub
+
+# Pytest / coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Local / student work-in-progress (не эталоны курса)
+**/solutions_local/
+

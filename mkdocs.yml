@@ -1,0 +1,95 @@
+site_name: Backend Interview Prep
+site_description: Подготовка к middle/middle+ Python backend — ядро ~8 месяцев + фаза 2
+site_url: https://sillyhatsonly.github.io/backend-interview-prep/
+repo_url: https://github.com/SillyHatsOnly/backend-interview-prep
+repo_name: SillyHatsOnly/backend-interview-prep
+
+theme:
+  name: material
+  language: ru
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Тёмная тема
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Светлая тема
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - toc.follow
+
+plugins:
+  - search:
+      lang:
+        - ru
+        - en
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - tables
+  - toc:
+      permalink: true
+  - attr_list
+  - md_in_html
+
+nav:
+  - Главная: index.md
+  - План:
+      - Ядро ~8 мес + фаза 2: plan/PLAN_6M.md
+      - Как учиться: plan/how-to-study.md
+      - Capstone Harbor: plan/capstone-harbor.md
+  - Канон:
+      - Документация курса: canon/DOC_GENERATION.md
+      - Стиль прозы: canon/writing_style.md
+  - Модули:
+      - Обзор модулей: modules/index.md
+      - M0 · Старт: modules/m0-start/index.md
+      - M0.5 · Как решать задачу: modules/m0b-thinking/index.md
+      - M0.5 · Цикл: modules/m0b-thinking/01_cycle.md
+      - M0.5 · Чеклист: modules/m0b-thinking/checklist.md
+      - M0.5 · Домашка: modules/m0b-thinking/homework.md
+      - M1 · Python foundation: modules/m1-python/index.md
+      - M1 · Dataclass: modules/m1-python/01_dataclasses.md
+      - M1 · Методы и декораторы: modules/m1-python/02_methods_decorators.md
+      - M1 · Typing: modules/m1-python/03_typing.md
+      - M1 · Домашка: modules/m1-python/homework.md
+  - Моки:
+      - Обзор: mocks/index.md
+  - Справочник:
+      - Книги: reference/books.md
+      - System design: reference/system-design.md
+      - SD-карточки: reference/sd-cards/index.md
+      - SD-01 URL shortener: reference/sd-cards/01_url_shortener.md
+      - SD-02 Очередь уведомлений: reference/sd-cards/02_notification_queue.md
+      - Эталоны (после ревью): solutions/README.md
+      - Yakimka checklist: reference/yakimka.md
+      - Git аварийный: reference/git-accidents.md
+      - ОС и терминал: reference/os-fundamentals.md
+      - (редирект) Linux терминал: reference/linux-terminal.md
+      - K8s потолок: reference/k8s-ceiling.md
+      - Скелет 5 недель: reference/legacy-5w.md
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/SillyHatsOnly/backend-interview-prep
