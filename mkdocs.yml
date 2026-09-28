@@ -82,6 +82,7 @@ nav:
       - SD-01 URL shortener: reference/sd-cards/01_url_shortener.md
       - SD-02 Очередь уведомлений: reference/sd-cards/02_notification_queue.md
       - Эталоны (после ревью): solutions/README.md
+      - Эталон M0: solutions/m0.md
       - Yakimka checklist: reference/yakimka.md
       - Git аварийный: reference/git-accidents.md
       - ОС и терминал: reference/os-fundamentals.md
