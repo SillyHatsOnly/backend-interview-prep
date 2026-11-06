@@ -73,6 +73,19 @@ nav:
       - M1 · Методы и декораторы: modules/m1-python/02_methods_decorators.md
       - M1 · Typing: modules/m1-python/03_typing.md
       - M1 · Домашка: modules/m1-python/homework.md
+      - M2 · Алгоритмы I: modules/m2-algo-i/index.md
+      - M2 · Сложность: modules/m2-algo-i/01_complexity.md
+      - M2 · Массив и хеш: modules/m2-algo-i/02_hash.md
+      - M2 · Указатели и окно: modules/m2-algo-i/03_pointers_window.md
+      - M2 · Стек: modules/m2-algo-i/04_stack.md
+      - M2 · Бинарный поиск: modules/m2-algo-i/05_binary_search.md
+      - M2 · Домашка: modules/m2-algo-i/homework.md
+      - M3 · Алгоритмы II: modules/m3-algo-ii/index.md
+      - M3 · Граф площадки: modules/m3-algo-ii/01_graphs.md
+      - M3 · BFS и DFS: modules/m3-algo-ii/02_bfs_dfs.md
+      - M3 · Перебор с откатом: modules/m3-algo-ii/03_backtracking.md
+      - M3 · Куча: modules/m3-algo-ii/04_heap.md
+      - M3 · Домашка: modules/m3-algo-ii/homework.md
   - Моки:
       - Обзор: mocks/index.md
   - Справочник:

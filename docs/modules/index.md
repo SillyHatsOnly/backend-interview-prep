@@ -6,8 +6,9 @@
 |--------|--------|
 | [M0 · Старт](m0-start/index.md) | готов к прохождению |
 | [M0.5 · Как решать задачу](m0b-thinking/index.md) | теория + speak-aloud |
-| [M1 · Python 3.10–3.13](m1-python/index.md) | теория + домашка |
-| M2–M3 · Алгоритмы | скоро |
+| [M1 · Python 3.10–3.13](m1-python/index.md) | теория + домашка, 1–5 закрыты |
+| [M2 · Алгоритмы I](m2-algo-i/index.md) | теория + домашка |
+| [M3 · Алгоритмы II](m3-algo-ii/index.md) | теория + домашка |
 | M4 · Машина / concurrency | скоро |
 | M5 · Тесты / async pytest | скоро |
 | M6 · Postgres | скоро |
