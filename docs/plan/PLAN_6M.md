@@ -88,15 +88,15 @@ Postgres, поиск, Docker, в конце Go-воркер. Спека:
         ↓
 Абстракции Python (+ M1b: исключения, генераторы, пакеты, Pyright)
         ↓
-Алгоритмы + структуры  (+ аллокатор Harbor)
+Алгоритмы + структуры (Skiena рабочий; CLRS справка; + аллокатор Harbor)
         ↓
-ОС-каркас (Linux сейчас; BSD/OpenBSD — осознанный фон) + CSAPP-lite
+ОС-каркас (OSTEP + CSAPP-lite; Linux сейчас; BSD/OpenBSD — фон)
         ↓
-Сеть на пальцах (сокет → TCP → HTTP) → threads → asyncio
+Сеть на пальцах (Kurose/сокет → TCP → HTTP) → threads → asyncio
         ↓
-Тесты (в т.ч. async) + чтение чужого кода
+Тесты + рефакторинг + чтение чужого/legacy кода
         ↓
-Данные: Postgres → (NoSQL/Elastic)
+Данные: Postgres → DDIA-мост → (NoSQL/Elastic)
         ↓
 HTTP API + Docker  (+ карточки system design)
         ↓
@@ -120,21 +120,21 @@ K8s карточки · Go-воркер
 | **M0.5** | Как решать задачу | цикл, speak-aloud; перенос цикла на бытовые/рабочие задачи | ~1.5–2 нед |
 | **M1** | Python foundation | dataclasses, методы, декораторы, typing | закрыт 1–5 |
 | **M1b** | Python глубже | исключения, iterators/generators, comprehensions, args/kwargs, copy, пакеты, **Pyright руками**, чтение чужого фрагмента | ~2–3 нед |
-| **M2** | Алгоритмы I | Big O, хеш, pointers, window, stack, BS + цикл | ~4–5 нед |
+| **M2** | Алгоритмы I | Big O, хеш, pointers, window, stack, BS + цикл; опора **Skiena**, CLRS — справка | ~4–5 нед |
 | **M3** | Алгоритмы II | BFS/DFS, backtracking, heap; чтение чужого алго | ~4–5 нед |
-| **M4a** | Машина / ОС | process/FD/память (CSAPP + exploring-os выборочно); Linux-практика | ~3 нед |
-| **M4b** | Сеть + concurrency | сокет/TCP/HTTP-картинка (Stevens как справочник) → threads/GIL → asyncio | ~4–5 нед |
-| **M5** | Тесты | pytest, fixtures, **async pytest**; тесты Harbor | ~2 нед |
-| **M6** | Postgres | Моргунов → *Art of PostgreSQL* → DEV1 → QPT → куски DEV2/DBS | ~5–6 нед |
-| **SD** | System design base | карточки с конца M4 через M6–M9 | ~6–8 карточек |
+| **M4a** | Машина / ОС | process/FD/память (**OSTEP** + CSAPP выборочно + Petzold фон); Linux-практика | ~3 нед |
+| **M4b** | Сеть + concurrency | сокет/TCP/HTTP (Kurose обзор + Stevens справка) → threads/GIL → asyncio | ~4–5 нед |
+| **M5** | Тесты | pytest, fixtures, **async pytest**; рефакторинг/legacy-навык; тесты Harbor | ~2–3 нед |
+| **M6** | Postgres | Моргунов → *Art of PostgreSQL* → DEV1 → QPT → куски DEV2/DBS → старт **DDIA** | ~5–6 нед |
+| **SD** | System design base | карточки с конца M4 через M6–M9; DDIA как язык компромиссов | ~6–8 карточек |
 | **M7** | HTTP / FastAPI | REST, pydantic, DI; публичное API Harbor | ~3 нед |
 | **M8** | Elastic / NoSQL | Elastic + каталог Harbor; Redis/Mongo минимум | ~2–3 нед |
 | **M9** | Docker | compose Harbor | ~2 нед |
 | **M10** | K8s | [потолок](../reference/k8s-ceiling.md) | ~1 нед |
 | **M11** | Go | синтаксис, goroutines; Go-воркер Harbor | конец ядра |
-| **F*** | Фон | git accidents, SICP избр. (≤1 глава/мес), паттерны Швеца 8–12, yakimka, OpenBSD «зачем» позже | весь горизонт |
+| **F*** | Фон | Pro Git / git accidents, *Pragmatic*, Ousterhout, SICP избр. (≤1 гл./мес), Швец 8–12, yakimka, OpenBSD «зачем» позже | весь горизонт |
 | **H** | Harbor | [сквозной проект](./capstone-harbor.md) | весь горизонт |
-| **P2** | Фаза 2 | полный SICP, Stevens глубже, Rogov internals, полный SD, BSD/OpenBSD по желанию | открыто |
+| **P2** | Фаза 2 | полный SICP, Crafting Interpreters / Nand2Tetris по голоду, Stevens глубже, Rogov, полный SD, BSD/OpenBSD | открыто |
 
 Доли времени ядра (грубо):
 
@@ -155,27 +155,44 @@ K8s карточки · Go-воркер
 
 ## 5. Источники (не копируем verbatim)
 
+Карта слоёв, тиров A/B/C/D и **бинарных выходов**:
+[sources-canon.md](../reference/sources-canon.md).
+ID и издания: [books.md](../reference/books.md).
+
+Правило: слой закрывается выходом (сделал / объяснил / сломал), не числом
+прочитанных книг. Книга без выхода из канона — декорация.
+
 ### Чеклист вопросов
 - [yakimka/questions.md](https://github.com/yakimka/python_interview_questions/blob/master/questions.md) —
   весь как checklist. Трекер: [yakimka.md](../reference/yakimka.md).
 
-### PostgresPro
-- DEV1 · DEV2 · QPT · DBS — как раньше.
+### Алгоритмы
+- **Рабочий текст:** Skiena *The Algorithm Design Manual* (3e) — выбор приёма.
+- **Справочник:** CLRS 4e — по нужде, не «прочитай учебник целиком».
+
+### Машина / ОС / сеть
+- M4a: OSTEP (основной голос) + CSAPP выборочно + Petzold фоном;
+  [exploring-os-ru](https://github.com/SillyHatsOnly/exploring-os-ru) выборочно.
+- M4b: Kurose — картина сверху; Stevens UNP — справочник сокетов;
+  asyncio-книга — Python-слой. Не «1000 стр. Stevens до FastAPI».
+- Полигон сейчас — Linux Mint. OpenBSD — когда модель процесса/сети ясна.
+
+### Ремесло (рядом с кодом, не вместо)
+- *Pragmatic Programmer* — фон привычек.
+- Ousterhout *Philosophy of Software Design* + Feathers *Legacy Code* —
+  сложность и чтение чужого (в т.ч. сгенерированного).
+- Khorikov *Unit Testing* + Fowler *Refactoring* — к M5.
+- Паттерны в ядре — Швец 8–12; GoF / Clean Code — не закон курса.
+
+### PostgresPro и данные
 - Порядок: Моргунов → *The Art of PostgreSQL* → DEV1 → QPT → выборочно DEV2/DBS.
+- *Designing Data-Intensive Applications* (лучше 2e) — **после** живого SQL/txn,
+  мост к SD и распределённым компромиссам. Не вместо Моргунова.
 - Рогов *PostgreSQL 16 изнутри* — фаза 2 / опц.
 
-### Книги
-[books.md](../reference/books.md) — библиография (без путей и имён файлов).
-Сети: Stevens *UNIX Network Programming* (том 1, 3-е изд.) — справочник к M4b
-и фазе 2, не «прочитать 1000 страниц до FastAPI».
-
-### ОС
-- [exploring-os-ru](https://github.com/SillyHatsOnly/exploring-os-ru) — выборочно.
-- Сейчас полигон — Linux Mint. OpenBSD — после понимания модели процесса/сети
-  («зачем этот мир»), не ради моды.
-
 ### System design
-- [system-design.md](../reference/system-design.md) + [sd-cards](../reference/sd-cards/index.md).
+- [system-design.md](../reference/system-design.md) + [sd-cards](../reference/sd-cards/index.md)
+  + куски DDIA / позже *Release It!*.
 
 ### Сквозной код
 - [Harbor](./capstone-harbor.md).
@@ -185,11 +202,14 @@ K8s карточки · Go-воркер
 ## 6. Сознательно не раздуваем (в ядре)
 
 - Полный SICP (избранные главы фоном; полный — фаза 2)
-- Весь Stevens / весь CSAPP как must
+- Весь Stevens / весь CSAPP / Nand2Tetris целиком как must
+- CLRS как единственный учебник алго; «18 essential books» за год
+- Clean Code / Code Complete / GoF как закон (критически / словарь — ок)
+- Generic DB textbook вместо пути Моргунов → Art of PG → PostgresPro
 - Hard DP; «спроектируй Instagram»
 - Кубер как работа админа
 - Все 70 дней Exploring OS
-- Django-энциклопедия
+- Django-энциклопедия; framework-книга года в канон
 - PDF книг в git; эталоны до сдачи
 - Второй живой capstone рядом с Harbor (архив REST — музей мышления)
 
@@ -219,12 +239,15 @@ K8s карточки · Go-воркер
 
 ## 9. Критерий «ядро прожито» (не только собес)
 
-- [ ] Цикл на алго и на applied без пустой тишины
-- [ ] Чужой фрагмент: инвариант + края + что сломал бы
+- [ ] Цикл на алго и на applied без пустой тишины (выход L0)
+- [ ] Чужой фрагмент: инвариант + края + что сломал бы (L1)
 - [ ] Python M1b закрыт без «дыр» yakimka P0 по ядру
-- [ ] Async + ОС-голос: process / thread / FD / blocking I/O
-- [ ] Сеть: сокет → TCP → HTTP одной картинкой вслух
-- [ ] Postgres: индекс, EXPLAIN, txn, lost update, ACID vs BASE
+- [ ] Алго: brute → приём → код; Big O своим голосом (L2; Skiena-навык)
+- [ ] Async + ОС-голос: process / thread / FD / blocking I/O (L3–L4)
+- [ ] Сеть: сокет → TCP → HTTP одной картинкой вслух (L4)
+- [ ] Тесты: зелёный рефакторинг или тест ловит названный баг (L5)
+- [ ] Postgres: индекс, EXPLAIN, txn, lost update, ACID vs BASE (L6)
+- [ ] DDIA-идеи: репликация/партиционирование «зачем и чем платим» (L6–L7)
 - [ ] Harbor: модели → allocate → тесты → API → compose
 - [ ] Базовый SD: 4–6 коробок + bottleneck
 - [ ] Техразбор решения на EN ~10–15 мин

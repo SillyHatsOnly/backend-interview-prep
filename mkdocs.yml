@@ -89,6 +89,7 @@ nav:
   - Моки:
       - Обзор: mocks/index.md
   - Справочник:
+      - Канон источников: reference/sources-canon.md
       - Книги: reference/books.md
       - System design: reference/system-design.md
       - SD-карточки: reference/sd-cards/index.md

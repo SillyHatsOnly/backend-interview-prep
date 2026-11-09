@@ -8,13 +8,13 @@
 | [M0.5 · Как решать задачу](m0b-thinking/index.md) | теория + speak-aloud |
 | [M1 · Python 3.10–3.13](m1-python/index.md) | теория + домашка, 1–5 закрыты |
 | M1b · Python глубже + Pyright + чтение кода | следующий пакет материалов |
-| [M2 · Алгоритмы I](m2-algo-i/index.md) | теория + домашка |
+| [M2 · Алгоритмы I](m2-algo-i/index.md) | теория + домашка; Skiena / CLRS |
 | [M3 · Алгоритмы II](m3-algo-ii/index.md) | теория + домашка |
-| M4a · Машина / ОС | скоро |
+| M4a · Машина / ОС | скоро (OSTEP + практика Linux) |
 | M4b · Сеть + concurrency | скоро |
-| M5 · Тесты / async pytest | скоро |
-| M6 · Postgres | скоро |
-| [SD · System design base](../reference/system-design.md) | карточки |
+| M5 · Тесты / async pytest | скоро (+ ремесло / legacy) |
+| M6 · Postgres | скоро → мост DDIA |
+| [SD · System design base](../reference/system-design.md) | карточки + DDIA |
 | M7 · FastAPI | скоро |
 | M8 · Elastic / NoSQL | скоро |
 | M9–M10 · Docker / K8s | скоро |
