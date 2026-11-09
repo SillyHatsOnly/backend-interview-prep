@@ -85,16 +85,17 @@
 [канон источников](../reference/sources-canon.md) (тиры + бинарный выход слоя)
 и [каталог ID](../reference/books.md).
 
-Коротко по ходу ядра:
+Коротко по ходу ядра (главы — в [reading-map](../reference/reading-map.md)):
 
-- M2–M3: **Skiena** как рабочий голос выбора алгоритма; CLRS — справка;
+- M2–M3: **Skiena** гл. 1–2, потом по приёму; CLRS — справка;
 - M4a: **OSTEP** (+ CSAPP/Petzold по отсылкам главы);
+- M4b: Kurose 9e гл. 1–3, Stevens — сокеты;
 - M1b/M5: Ousterhout + Feathers (сложность и чужой код);
-- M5: Khorikov + Refactoring;
-- конец M6 → SD: **DDIA** (лучше 2e);
-- фон: *Pragmatic Programmer*, Pro Git, Швец 8–12, SICP ≤1 гл./мес.
+- M5: Khorikov + Refactoring гл. 1–4;
+- конец M6 → SD: **DDIA 2e** гл. 1–2, 4, 6, 8 по мере;
+- фон: *Pragmatic* по одному topic, Pro Git, Швец 8–12, SICP ≤1 гл./мес.
 
-Не копим 18 «essential» книг параллельно с модулем — одна опора слоя.
+Не копим полку параллельно с модулем — **одна опора слоя за слот**.
 
 ## Git и ОС фоном
 

@@ -90,6 +90,7 @@ nav:
       - Обзор: mocks/index.md
   - Справочник:
       - Канон источников: reference/sources-canon.md
+      - Карта чтения: reference/reading-map.md
       - Книги: reference/books.md
       - System design: reference/system-design.md
       - SD-карточки: reference/sd-cards/index.md

@@ -42,7 +42,8 @@
 ## Книга-мост
 
 После живого SQL/транзакций (M6) — *Designing Data-Intensive Applications*
-(`ddia`, лучше 2e): язык репликации, партиционирования, компромиссов
-согласованности. Не вместо карточек и не «прочитай целиком до первого мока» —
-главы по мере SD. Устойчивость в проде позже усиливает *Release It!*
-(`release-it`). Канон: [sources-canon L6–L7](./sources-canon.md).
+(`ddia`, **2e, 2026**): сначала гл. **1–2** (trade-offs, latency/reliability),
+потом **4** storage, **6** replication, **8** transactions — рядом с Postgres.
+Карта: [reading-map · ddia](./reading-map.md). Не вместо карточек и не «вся
+книга до первого мока». Позже — *Release It!* (`release-it`).
+Канон: [sources-canon L6–L7](./sources-canon.md).

@@ -5,7 +5,8 @@
 в курс не пишем. Verbatim из книги — нельзя.
 
 **Как устроена полка:** [канон источников](./sources-canon.md) — тиры A/B/C/D,
-слои курса и **бинарные выходы**. Этот файл — ID и библиография.
+слои и выходы. **Какие главы когда:** [reading-map](./reading-map.md).
+Этот файл — ID и библиография.
 
 ## Как ссылаться в главе
 
@@ -45,14 +46,14 @@
 | `nand2tetris` | C | Noam Nisan, Shimon Schocken — *The Elements of Computing Systems* (Nand2Tetris; машина руками) | P2 |
 | `csapp` | A/B | Рэндал Э. Брайант, Дэвид Р. О'Халларон — *Компьютерные системы: архитектура и программирование*, **3-е изд., 2022** (CSAPP) | M4a выборочно |
 | `ostep` | A | Remzi H. Arpaci-Dusseau, Andrea C. Arpaci-Dusseau — *Operating Systems: Three Easy Pieces* (виртуализация, concurrency, persistence; свободно онлайн) | M4a |
-| `kurose` | B | James F. Kurose, Keith W. Ross — *Computer Networking: A Top-Down Approach* (картина сверху: HTTP→TCP→IP; свежее издание по возможности) | M4b обзор |
+| `kurose` | B | James F. Kurose, Keith W. Ross — *Computer Networking: A Top-Down Approach*, **9th edition** (картина сверху: HTTP→TCP→IP) | M4b обзор |
 | `unp-stevens` | B/C | W. Richard Stevens, Bill Fenner, Andrew M. Rudoff — *UNIX Network Programming, Volume 1: The Sockets Networking API*, **3rd edition** (сокеты; справочник, не «1000 стр. до FastAPI») | M4b / P2 |
 
 ### Алгоритмы
 
 | ID | Тир | Книга | Модули |
 |----|-----|--------|--------|
-| `skiena` | A | Steven S. Skiena — *The Algorithm Design Manual*, **3rd edition** (**рабочий** текст: выбор алгоритма, каталог, практика) | M2–M3 |
+| `skiena` | A | Steven S. Skiena — *The Algorithm Design Manual*, **3rd edition, 2020** (**рабочий** текст: выбор алгоритма, каталог, практика) | M2–M3 |
 | `clrs4` | B | Cormen, Leiserson, Rivest, Stein — *Introduction to Algorithms*, **4th edition**, MIT Press, ISBN 978-0-262-04630-5 (справочник / доказательства по нужде) | M2–M3 |
 
 ### Python
@@ -60,18 +61,18 @@
 | ID | Тир | Книга | Модули |
 |----|-----|--------|--------|
 | `typed-py` | A/B | Алексей Голобурдин (команда «Диджитализируй!») — *Типизированный Python для профессиональной разработки*, редакция **от 8 июня 2022** (актуальные версии — у автора) | M1 / M1b |
-| `fluent-py` | B | Luciano Ramalho — *Fluent Python*, **2nd edition** (модель данных, последовательности, декораторы, concurrency «по-пайтоновски») | M1b / M4b |
+| `fluent-py` | B | Luciano Ramalho — *Fluent Python: Clear, Concise, and Effective Programming*, **2nd edition** (модель данных, последовательности, декораторы, concurrency) | M1b / M4b |
 | `asyncio` | A/B | Мэттью Фаулер — *Asyncio и конкурентное программирование на Python* | M4b |
 
 ### Ремесло, тесты, чужой код
 
 | ID | Тир | Книга | Модули |
 |----|-----|--------|--------|
-| `pragmatic` | A фон | David Thomas, Andrew Hunt — *The Pragmatic Programmer*, **20th Anniversary Edition** | F* / весь горизонт |
+| `pragmatic` | A фон | David Thomas, Andrew Hunt — *The Pragmatic Programmer*, **2nd edition / 20th Anniversary, 2020** | F* / весь горизонт |
 | `oust-psd` | A/B | John Ousterhout — *A Philosophy of Software Design*, **2nd edition** (сложность, глубокие модули; спорит с лозунгами Clean Code) | M1b / M5 / F* |
-| `feathers-legacy` | A/B | Michael Feathers — *Working Effectively with Legacy Code* (чтение и изменение кода, который ты не писал — навык эпохи LLM) | M1b / M5 |
+| `feathers-legacy` | A/B | Michael Feathers — *Working Effectively with Legacy Code*; рус. перевод: М. Физерс — *Эффективная работа с унаследованным кодом*, **2009** | M1b / M5 |
 | `refactoring` | B | Martin Fowler — *Refactoring: Improving the Design of Existing Code*, **2nd edition** | M5 |
-| `khorikov-ut` | A/B | Vladimir Khorikov — *Unit Testing: Principles, Practices, and Patterns* (принципы; примеры на C#, идеи переносятся) | M5 |
+| `khorikov-ut` | A/B | Vladimir Khorikov — *Unit Testing: Principles, Practices, and Patterns*; Manning, **2020** (принципы; примеры на C#, идеи переносятся) | M5 |
 | `pro-git` | B | Scott Chacon, Ben Straub — *Pro Git*, **2nd edition** (свободно на git-scm.com) | F* / git |
 | `patterns-dive` | B | Александр Швец — *Погружение в паттерны проектирования*, **v2021-2.33** (не путать с GoF) | F* 8–12 паттернов |
 | `gof` | D/C | Erich Gamma et al. — *Design Patterns* (GoF) — словарь; практика у нас через Швеца | P2 словарь |
@@ -84,9 +85,9 @@
 |----|-----|--------|--------|
 | `morgunov-2018` | A | Е. П. Моргунов — *PostgreSQL. Основы языка SQL*, учеб. пособие; БХВ-Петербург, **2018**, ISBN 978-5-9775-4022-3 | M6 старт |
 | `morgunov-2025` | A | Е. П. Моргунов — *PostgreSQL. Профессиональный SQL*, учеб. пособие; ДМК Пресс, **2025**, ISBN 978-5-93700-373-7 | M6 |
-| `art-of-pg` | A | Dimitri Fontaine — *The Art of PostgreSQL*, **2nd edition** (SQL как код приложения; Python-примеры) | M6 |
+| `art-of-pg` | A | Dimitri Fontaine — *The Art of PostgreSQL*, **2nd edition, Updated 2026** (SQL как код приложения; Python-примеры) | M6 |
 | `pg-inside16` | C | Егор Рогов — *PostgreSQL 16 изнутри*; Postgres Professional, Москва, **2024** | M6 опц. / P2 |
-| `ddia` | A | Martin Kleppmann ( + Chris Riccomini в **2nd edition**) — *Designing Data-Intensive Applications* (**предпочитаем 2e**, если доступно; иначе 1e с пометкой года) | после M6; SD / M7–M8 |
+| `ddia` | A | Martin Kleppmann, Chris Riccomini — *Designing Data-Intensive Applications*, **2nd edition, 2026**, O’Reilly, ISBN 978-1-098-11906-5 | после M6; SD / M7–M8 |
 | `elastic` | B | Анураг Шривастава — *Elasticsearch для разработчиков*, **2-е изд., 2025** | M8 |
 | `release-it` | B/C | Michael T. Nygard — *Release It!*, **2nd edition** (таймауты, каскады, устойчивость) | SD / P2 |
 | `fsa` | C | Mark Richards, Neal Ford — *Fundamentals of Software Architecture* (свежее издание) | SD / P2 |
@@ -112,20 +113,16 @@
 
 ---
 
-## Минимальная полка ядра (если покупать по одной)
+## Полка ядра (опоры в наличии у читателя)
 
-Порядок закупки важнее «сразу всё»:
+Локальные файлы **не** перечисляем. Карта глав: [reading-map](./reading-map.md).
 
-1. `skiena` — уже идёшь в M2  
-2. `ddia` (лучше 2e) — к концу M6  
-3. `oust-psd` + `feathers-legacy` — к M1b/M5  
-4. `pragmatic` — фон, рано можно  
-5. `khorikov-ut` + `refactoring` — к M5  
-6. `fluent-py` — если M1b/M4b упираются в «пайтоновский» слой  
-7. `art-of-pg` — если ещё нет к M6  
-8. `kurose` — если сеть остаётся тёмным лесом после картинки курса (Stevens уже как справочник)
+Опоры, уже заведённые в канон для ядра: `skiena`, `ddia` (2e), `oust-psd`,
+`feathers-legacy`, `pragmatic`, `khorikov-ut`, `refactoring`, `fluent-py`,
+`art-of-pg` (Updated 2026), `kurose` (9e).
 
-Бесплатно закрывают дыры: `ostep`, `pro-git`, куски `se-google`, exploring-os-ru.
+Бесплатно рядом: `ostep`, `pro-git`, куски `se-google`, exploring-os-ru.
+Stevens / CSAPP / Petzold / Моргунов — по прежнему каталогу.
 
 ---
 
