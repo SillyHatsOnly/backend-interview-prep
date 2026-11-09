@@ -19,10 +19,10 @@ backend на Python, и личная система ремесла.
 ## Карта
 
 1. **Старт + как решать задачу** — ритуал и цикл (M0 / M0.5)
-2. **Python** — M1 + **M1b** (дыры ядра, Pyright, чтение чужого кода)
+2. **Python** — M1 + **[M1b](modules/m1b-python-deeper/index.md)** (дыры ядра, Pyright, чтение кода)
 3. **Алгоритмы** — M2–M3; всегда через цикл; часть голоса на EN
-4. **ОС + сеть + concurrency** — M4a / M4b
-5. **Тесты** — pytest, async pytest
+4. **ОС + сеть + concurrency** — **[M4a](modules/m4a-os/index.md)** / **[M4b](modules/m4b-network-concurrency/index.md)**
+5. **Тесты** — pytest, async pytest (пакет после прохождения M1b+M4)
 6. **Postgres** — SQL → индексы → планы → транзакции
 7. **HTTP / FastAPI** + **базовый system design**
 8. **NoSQL / Elastic** · **Docker** · **K8s** карточки · **Go**

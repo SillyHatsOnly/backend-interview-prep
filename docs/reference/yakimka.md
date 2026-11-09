@@ -14,22 +14,22 @@
 |------|--------|--------|
 | Последовательности (list/tuple/str) | covered | M1 (база) + drills |
 | Множества и отображения | covered | M1 / далее алго |
-| Функции (args/kwargs, scope) | todo | M1 доп. карточка |
-| Итераторы и генераторы | todo | M1b / W4 legacy |
+| Функции (args/kwargs, scope) | covered | M1b · 03 |
+| Итераторы и генераторы | covered | M1b · 02 |
 | Классы, MRO | todo | later |
-| Модули, пакеты | covered | M0/M1 структура пакетов |
-| Исключения | todo | M1b |
+| Модули, пакеты | covered | M1b · 05 (+ M0/M1) |
+| Исключения | covered | M1b · 01 |
 | Декораторы | covered | M1 · 02 |
 | Метаклассы | todo | карточка later (не deep) |
 | Ввод-вывод | todo | M1 / терминал |
 | Тестирование | covered | M0 smoke · глубже M5 |
 | FP (map/filter/reduce) | todo | M1 |
-| GIL, потоки, процессы | todo | M4 |
+| GIL, потоки, процессы | covered | M4a · 01 + M4b · 02 |
 | Singleton варианты | todo | паттерны (`patterns-dive`) |
-| Линтеры / code style | todo | M0/M1 |
-| Comprehensions | todo | M1 |
+| Линтеры / code style | covered | M1b · 06 Pyright (+ M0/M1) |
+| Comprehensions | covered | M1b · 03 |
 | `_` / `__` | todo | M1 |
-| copy vs deepcopy | todo | M1 |
+| copy vs deepcopy | covered | M1b · 04 |
 | GC | todo | M1 |
 | Интроспекция / рефлексия | todo | карточка |
 | dataclass / frozen | covered | M1 · 01 |

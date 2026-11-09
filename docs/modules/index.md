@@ -8,11 +8,11 @@
 | [M0 · Старт](m0-start/index.md) | готов к прохождению |
 | [M0.5 · Как решать задачу](m0b-thinking/index.md) | уплотнён site-first |
 | [M1 · Python 3.10–3.13](m1-python/index.md) | уплотнён; 1–5 + блок «углубление» |
-| M1b · Python глубже + Pyright + чтение кода | следующий пакет (сразу site-first) |
+| [M1b · Python глубже + Pyright + чтение кода](m1b-python-deeper/index.md) | готов к прохождению; site-first |
 | [M2 · Алгоритмы I](m2-algo-i/index.md) | уплотнён site-first |
 | [M3 · Алгоритмы II](m3-algo-ii/index.md) | уплотнён site-first |
-| M4a · Машина / ОС | скоро (OSTEP + практика Linux) |
-| M4b · Сеть + concurrency | скоро |
+| [M4a · Машина / ОС](m4a-os/index.md) | готов к прохождению; site-first Linux |
+| [M4b · Сеть + concurrency](m4b-network-concurrency/index.md) | готов к прохождению после M4a; site-first |
 | M5 · Тесты / async pytest | скоро (+ ремесло / legacy) |
 | M6 · Postgres | скоро → мост DDIA |
 | [SD · System design base](../reference/system-design.md) | карточки + DDIA |

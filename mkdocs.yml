@@ -73,6 +73,15 @@ nav:
       - M1 · Методы и декораторы: modules/m1-python/02_methods_decorators.md
       - M1 · Typing: modules/m1-python/03_typing.md
       - M1 · Домашка: modules/m1-python/homework.md
+      - M1b · Python глубже: modules/m1b-python-deeper/index.md
+      - M1b · Исключения: modules/m1b-python-deeper/01_exceptions.md
+      - M1b · Итераторы и генераторы: modules/m1b-python-deeper/02_iterators_generators.md
+      - M1b · Args и включения: modules/m1b-python-deeper/03_args_comprehensions.md
+      - M1b · Копии и мутация: modules/m1b-python-deeper/04_copy_mutability.md
+      - M1b · Пакеты: modules/m1b-python-deeper/05_packages.md
+      - M1b · Pyright: modules/m1b-python-deeper/06_pyright.md
+      - M1b · Чтение кода: modules/m1b-python-deeper/07_reading_code.md
+      - M1b · Домашка: modules/m1b-python-deeper/homework.md
       - M2 · Алгоритмы I: modules/m2-algo-i/index.md
       - M2 · Сложность: modules/m2-algo-i/01_complexity.md
       - M2 · Массив и хеш: modules/m2-algo-i/02_hash.md
@@ -86,6 +95,20 @@ nav:
       - M3 · Перебор с откатом: modules/m3-algo-ii/03_backtracking.md
       - M3 · Куча: modules/m3-algo-ii/04_heap.md
       - M3 · Домашка: modules/m3-algo-ii/homework.md
+      - M4a · Машина / ОС: modules/m4a-os/index.md
+      - M4a · Процесс: modules/m4a-os/01_process.md
+      - M4a · Память: modules/m4a-os/02_memory.md
+      - M4a · Файлы и FD: modules/m4a-os/03_files_fd.md
+      - M4a · Планировщик и blocking: modules/m4a-os/04_scheduling_blocking.md
+      - M4a · Linux lab: modules/m4a-os/05_linux_lab.md
+      - M4a · Домашка: modules/m4a-os/homework.md
+      - M4b · Сеть + concurrency: modules/m4b-network-concurrency/index.md
+      - M4b · Socket → TCP → HTTP: modules/m4b-network-concurrency/01_socket_tcp_http.md
+      - M4b · Threads и GIL: modules/m4b-network-concurrency/02_threads_gil.md
+      - M4b · Модель asyncio: modules/m4b-network-concurrency/03_asyncio_model.md
+      - M4b · Blocking vs async: modules/m4b-network-concurrency/04_blocking_vs_async.md
+      - M4b · Мини-практика: modules/m4b-network-concurrency/05_mini_practice.md
+      - M4b · Домашка: modules/m4b-network-concurrency/homework.md
   - Моки:
       - Обзор: mocks/index.md
   - Справочник:
