@@ -1,5 +1,5 @@
 site_name: Backend Interview Prep
-site_description: Подготовка к middle/middle+ Python backend — ядро ~8 месяцев + фаза 2
+site_description: Подготовка к middle Python backend и система ремесла — ядро ~9–12 месяцев + фаза 2
 site_url: https://sillyhatsonly.github.io/backend-interview-prep/
 repo_url: https://github.com/SillyHatsOnly/backend-interview-prep
 repo_name: SillyHatsOnly/backend-interview-prep
@@ -55,7 +55,7 @@ markdown_extensions:
 nav:
   - Главная: index.md
   - План:
-      - Ядро ~8 мес + фаза 2: plan/PLAN_6M.md
+      - Ядро ~год + фаза 2: plan/PLAN_6M.md
       - Как учиться: plan/how-to-study.md
       - Capstone Harbor: plan/capstone-harbor.md
   - Канон:

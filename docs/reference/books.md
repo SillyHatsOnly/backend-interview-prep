@@ -29,7 +29,9 @@ Verbatim из книги — нельзя.
 | `clrs4` | Cormen, Leiserson, Rivest, Stein — *Introduction to Algorithms*, **4th edition**, MIT Press, ISBN 978-0-262-04630-5 | M2–M3 |
 | `sicp` | Харольд Абельсон, Джеральд Джей Сассман — *Структура и интерпретация компьютерных программ* (SICP); MIT Press / рус. перевод по имеющемуся изданию | фон, избр. главы |
 | `patterns-dive` | Александр Швец — *Погружение в паттерны проектирования*, **v2021-2.33** (разбор классических паттернов + SOLID; не путать с книгой «Банды четырёх») | фон, 8–12 паттернов |
-| `pg-inside16` | Егор Рогов — *PostgreSQL 16 изнутри*; Postgres Professional, Москва, **2024** | M6 опц. |
+| `pg-inside16` | Егор Рогов — *PostgreSQL 16 изнутри*; Postgres Professional, Москва, **2024** | M6 опц. / P2 |
+| `code-petzold` | Charles Petzold — *Code: The Hidden Language of Computer Hardware and Software* (как железо становится смыслом; мост к CSAPP) | M4a фон |
+| `unp-stevens` | W. Richard Stevens, Bill Fenner, Andrew M. Rudoff — *UNIX Network Programming, Volume 1: The Sockets Networking API*, **3rd edition** (сокеты, TCP; справочник, не must «все 1000 стр.») | M4b / P2 |
 
 Онлайн (не книги): курсы PostgresPro DEV1 / DEV2 / QPT / DBS — в PLAN_6M;
 в главах указывать код курса и тему/модуль площадки.
